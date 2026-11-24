@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Sofía Bula</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio Web</h1>
+        <p>Bienvenidos a mi espacio personal</p>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="sobre-mi-contenido">
+                <img src="img/sofia.png" alt="Foto de Sofía Bula">
+                <div class="sobre-mi-texto">
+                    <p>¡Hola! Mi nombre es Sofía Bula. Soy estudiante y actualmente estoy aprendiendo sobre programación y desarrollo web. Me considero una persona cariñosa, amable, empática y con muchas ganas de aprender.</p>
+                    <p>En mi tiempo libre me gusta escuchar música, maquillarme, ver películas y compartir con mis amigos. Mi objetivo es aprender cosas nuevas y crear páginas web bonitas y organizadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Mis habilidades</h2>
+            <div class="habilidades-grid">
+                <div>
+                    <h3>Tecnologías</h3>
+                    <ul>
+                        <li>Organizar información en listas.</li>
+                        <li>Insertar imágenes e hipervínculos.</li>
+                        <li>Crear páginas web con HTML.</li>
+                        <li>Aprender los conceptos básicos de CSS.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Mi nivel de conocimiento</h3>
+                    <table>
+                        <thead><tr><th>Tecnología</th><th>Nivel</th><th>Estado</th></tr></thead>
+                        <tbody>
+                            <tr><td>HTML5</td><td>Básico</td><td>Aprendiendo</td></tr>
+                            <tr><td>CSS3</td><td>Básico</td><td>En proceso</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+            <div class="proyectos-grid">
+                <article>
+                    <img src="img/biografia.jpg" alt="Proyecto de mi biografía">
+                    <h3>Proyecto 1: Mi biografía</h3>
+                    <p>Una página web donde presento información sobre mí, mis gustos, mis pasatiempos y algunas de mis características personales.</p>
+                    <a href="#sobre-mi">Ver descripción</a>
+                </article>
+                <article>
+                    <img src="img/maquillaje.jpg" alt="Página de maquillaje">
+                    <h3>Proyecto 2: Página de maquillaje</h3>
+                    <p>Una página web dedicada al maquillaje, con información sobre productos, estilos y consejos básicos.</p>
+                    <a href="#proyectos">Ver descripción</a>
+                </article>
+                <article class="destacado">
+                    <img src="img/miportafolio.jpg" alt="Mi portafolio web">
+                    <h3>Proyecto 3: Mi portafolio web</h3>
+                    <p>Mi portafolio personal donde muestro quién soy, mis habilidades y mis proyectos. Mi objetivo es crear páginas web bonitas y organizadas.</p>
+                    <a href="#sobre-mi">Ver descripción</a>
+                </article>
+                <article>
+                    <img src="img/musica.jpg" alt="Página de música y películas">
+                    <h3>Proyecto 4: Música y películas</h3>
+                    <p>Una página con mis canciones y películas favoritas, organizada con listas, imágenes y enlaces.</p>
+                    <a href="#proyectos">Ver descripción</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO (Clase 6: formulario) -->
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>¿Tienes una idea o un proyecto? Escríbeme y te responderé pronto.</p>
+  <form class="formulario" action="https://formspree.io/f/xaeoaaey" method="post">
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+    </div>
+    <div class="campo">
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+    </div>
+    <div class="campo campo-completo">
+      <label for="asunto">Asunto</label>
+      <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?">
+    </div>
+    <div class="campo campo-completo">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+  </form>
+</section>
+            
+        
+    </main>
+    <footer>
+        <p>&copy; 2026 Sofía Bula. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+         
+          
+        
