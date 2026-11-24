@@ -1,0 +1,320 @@
+/* ==== 1. VARIABLES (paleta elegante) ==== */
+:root {
+    --color-primario: #6D4C3D;
+    --color-primario-oscuro: #4A322A;
+    --color-texto: #2E2A26;
+    --color-fondo: #FAF6F0;
+    --color-blanco: #FFFFFF;
+    --color-borde: #E8DDD0;
+    --color-dorado: #C6A664;
+    --color-suave: #F1E9DE;
+    --fuente-principal: "Segoe UI", Arial, sans-serif;
+    --radio: 14px;
+    --sombra: 0 6px 18px rgba(74, 50, 42, 0.08);
+}
+
+/* ==== 2. RESET Y ESTILOS GENERALES ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* desplazamiento suave al usar el menú */
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%; /* las imágenes nunca se salen de su contenedor */
+    display: block;
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 5px;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7rem;
+    white-space: nowrap;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6b2d3a;
+    font-size: 1.8rem;
+}
+
+.sobre-mi-contenido {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.sobre-mi-contenido img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* CLASE 5 - HABILIDADES EN 2 COLUMNAS */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.habilidades-grid > div {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.habilidades-grid ul {
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    font-size: 0.8rem;
+
+}
+
+th {
+    background-color: #ffb6c1;
+}
+
+/* CLASE 5 - PROYECTOS EN GRID */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.proyectos-grid article {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.proyectos-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.proyectos-grid h3 {
+    margin: 10px 0;
+}
+
+.proyectos-grid a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #ffb6c1;
+    color: #6b2d3a;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PROYECTO DESTACADO - OCUPA 2 COLUMNAS */
+.destacado {
+    grid-column: span 2;
+    background-color: #ffe4e9 !important;
+    border: 2px solid #ff8fab;
+}
+
+#contacto {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#contacto a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #ffb6c1;
+    color: #6b2d3a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #6b2d3a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE - PARA CELULAR */
+@media (max-width: 768px) {
+    .sobre-mi-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destacado {
+        grid-column: span 1;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+/* ===== 12. FORMULARIO DE CONTACTO ===== */
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+.campo-completo {
+  grid-column: 1 / -1;
+}
+.campo label { font-weight: 600; }
+.campo input,
+.campo textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 12px;
+  border: 2px solid #ffc2d1;
+  border-radius: 8px;
+  background-color: #fff0f5;
+}
+.campo textarea { resize: vertical; }
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #ff5d8f;
+  background-color: white;
+  outline: 3px solid #ffc2d1;
+}
+.campo input::placeholder,
+.campo textarea::placeholder { color: #9ca3af; }
+
+.btn-enviar {
+  justify-self: start;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff5d8f;
+  color: white;
+  cursor: pointer;
+}
+.btn-enviar:hover { background-color: #e0447a; }
+
+@media (max-width: 600px) {
+  .formulario { grid-template-columns: 1fr; }
+}
+
+/* ===== 13. TRANSICIONES Y TRANSFORMACIONES ===== */
+nav a, article a, .btn-enviar {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-enviar:active { transform: scale(0.96); }
+
+article {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+/* RETO CASA */
+#habilidades li {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#habilidades li:hover {
+  transform: scale(1.1);
+  background-color: #ff8fab;
+  color: white;
+}
+.sobre-mi-contenido img {
+  transition: transform 0.3s ease;
+}
+.sobre-mi-contenido img:hover {
+  transform: scale(1.05) rotate(3deg);
+}
